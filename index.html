@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Vijayalakshmi</span></h1>
+        </div>
+    </div>
+  </div> 
+  <!-- -----------------ABOUT------------ -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am fast learner and always passionate to learn something new to contribute to the tech industries.I am skilled in Web Development and also working on full stack projects.
+                Open to new challenges and ready to take the next step in my career journey!.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links"onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>2020-Current</span><br>Rajeev Gandhi Memorial College Of Engineering&Technology- B.Tech [8.60 CGPA]</li>
+                        <li><span>2018-2020</span><br>Presidency PU College- Intermediate [92.81%]</li>
+                        <li><span>2017-2018</span><br>High School- [10 CGPA]</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Skills">
+                    <ul>
+                        <li><span>Languages</span><br>Java, HTML/CSS, JavaScript, SQL</li>
+                        <li><span>Web Technologies</span><br> NodeJs,AdonisJS, Spring Boot</li>
+                        <li><span>Databases</span><br>Mysql</li>
+                        <li><span>Interpersonal Skills</span><br>Problem Solving, Communication, Leadership</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Internship on Architectural/design Softwares</span><br>CMTI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+<!-- -----------projects----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpeg">
+                <div class="layer">
+                    <h3>To show case the skills and achievements</h3>
+                    <p>Developed my portofolio website using HTML/CSS and JavaScript </p>
+                    <a href="https://github.com/Vijayalakshmi246/Personal Portofolio.git"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                    <img src="images/work-2.jpeg" width:650 height:800>
+                    <div class="layer">
+                            <h3>ToDo Application</h3>
+                            <p>Developed a Full stack crud application for managing ToDo tasks using AdonisJs </p>
+                            <a href="https://github.com/Vijayalakshmi246/ToDo Application.git"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        
+                        </div>
+            </div>
+            <div class="work">
+                    <img src="images/work-3.jpeg">
+                    <div class="layer">
+                            <h3>Bank Management System</h3>
+                            <p>Developed a Bank management system in java with focus on user-friendly interfaces and efficient transaction processing</p>
+                            <a href="https://github.com/Vijayalakshmi246/Bank Management.git"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        
+                        </div>
+            </div>
+
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------Contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>vijayalakshmi.b627@gmail.com</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i>9392458572</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vijayalakshmi-b-1ba173275/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Vijayalakshmi246"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/vijji_reddy_24/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                </div>
+                <a href="images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> Vijayalakshmi : Copyright 2024. All Rights Reserved</p>
+    </div>
+</div>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+
+    }
+</script>
+<script>
+var sidemenu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
+</script>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzakxSEE5B8Ecq6B84hOfKZKnNfZbAWpVLmHDEr3a7b34USpwvaoy33414gERBxeYiQeA/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg=document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+</html>
